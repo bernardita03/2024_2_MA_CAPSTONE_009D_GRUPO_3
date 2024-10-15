@@ -1,0 +1,343 @@
+E1 -H1.1 
+Rol: Como paciente
+Caracteristica / Funcionalidad: Quiero poder registrar mi información personal y emocional.
+Razón / resultado:Con la finalidad de  que el psicologo pueda llevar un seguimiento detallado de mi estado.
+Criterio de aceptación
+1.El paciente debe poder ingresar su información personal y emocional en su perfil
+2.La información ingresada debe estar disponible para el psicólogo.
+Contexto: 
+1.En caso de que el paciente quiera actualizar su estado emocional.
+2.En caso de que el psicólogo requiera acceso al historial emocional del paciente.
+Evento:
+1.Cuando el paciente accede a su perfil y agrega o actualiza su información personal y emocional.
+2.Cuando el psicólogo accede al perfil del paciente.
+Resultado:
+1.El sistema guarda la información nueva o actualizada, y esta queda disponible para el psicólogo en la próxima sesión.
+2.El sistema muestra la información actualizada del paciente, permitiendo al psicólogo revisar el estado emocional del paciente antes de la sesión.
+
+E1 H1.2
+Rol: Como psicólogo
+Caracteristica / Funcionalidad: Quiero tener acceso a las fichas de mis pacientes.
+Razón / resultado: Con la finalidad de  evaluar su progeso a lo largo del tiempo.
+Criterio de aceptación
+1.El psicólogo debe poder ver las fichas clínicas de los pacientes.
+2.El sistema debe actualizar la información del paciente en tiempo real.
+Contexto: 
+1.En caso de que el psicólogo esté revisando la evolución de un paciente.
+2.En caso de que el psicólogo deba preparar una sesión.
+Evento:
+1.Cuando el psicólogo selecciona la ficha de un paciente en la plataforma.
+2.Cuando se realiza una actualización de la ficha clínica o el paciente registra nueva información.
+Resultado:
+1.El sistema muestra la ficha clínica completa del paciente, incluyendo su historial y la evolución registrada.
+2.El sistema actualiza automáticamente la ficha del paciente y refleja estos cambios en tiempo real, disponibles para el psicólogo.
+
+
+E1 H1.3
+Rol: Como paciente
+Caracteristica / Funcionalidad: Quiero recibir recomendaciones personalizadas de ejercicios emocionales según mi estado de ánimo.
+Razón / resultado: Para poder mejorar mi bienestar mental.
+Criterio de aceptación
+1.El sistema debe recomendar ejercicios emocionales según el estado de ánimo registrado por el paciente.
+2.Las recomendaciones deben ser personalizadas según el historial del paciente.
+Contexto: 
+1.En caso de que el paciente registre un estado emocional específico.
+2.En caso de que el paciente solicite ayuda entre sesiones.
+Evento:
+1.Cuando el paciente registra su estado emocional en la plataforma.
+2.Cuando el paciente accede a la sección de recomendaciones.
+Resultado:
+1. El sistema analiza el estado emocional ingresado y sugiere una serie de ejercicios emocionales personalizados.
+2. El sistema consulta el historial del paciente y muestra ejercicios o actividades relevantes, personalizadas para mejorar su bienestar.
+
+
+E1 H1.4
+Rol: Como psicólogo
+Caracteristica / Quiero poder personalizar el plan de tratamiento de cada paciente en función de sus avancesFuncionalidad: 
+Razón / resultado: Para proporcionar una atención adaptada.
+Criterio de aceptación
+1. Personalización del plan de tratamiento.
+2. Opciones de personalizacion
+Contexto: 
+1. En caso que el psicólogo acceda a la ficha de un paciente y revise su progreso.
+2. El profesional de la salud revisa el progreso del paciente.
+Evento:
+1. Se registra la evolución del paciente en la plataforma.
+2.  Decide realizar ajustes en el tratamiento
+Resultado:
+1. El sistema debe permitir al psicólogo personalizar el plan de tratamiento, guardando las modificaciones y asociándolas al historial del paciente para seguimiento posterior.
+2. En caso de que el paciente solicite ajustes en su plan de tratamiento.
+E2 H2.1
+Rol:Como paciente
+Caracteristica / Funcionalidad: Quiero poder agendar una cita con mi psicólogo a través de la plataforma.
+Razón / resultado: Para asegurarme de tener mi consulta cuando la necesite
+Criterio de aceptación
+1.El paciente debe poder seleccionar un horario disponible y agendar una cita.
+2. El sistema debe enviar notificaciones tanto al paciente como al psicólogo.
+Contexto: 
+1. En caso de que el paciente necesite una nueva cita.
+2. En caso de que el horario seleccionado esté disponible
+Evento:
+1.Cuando el paciente selecciona un horario disponible en el calendario de la psicóloga.
+2. Cuando se confirma la cita después de que el paciente la haya agendado.
+Resultado:
+1. El sistema registra la cita, actualiza el calendario del paciente y notifica a ambas partes sobre el agendamiento.
+2. El sistema envía notificaciones automáticas a ambos (paciente y psicólogo) con los detalles de la cita.
+
+
+E2 H2.2
+Rol:Como psicólogo
+Caracteristica / Funcionalidad: Quiero poder modificar las citas de mis pacientes en caso de emergencias o cambios de horario.
+Razón / resultado: Para mantener un calendario actualizado.
+Criterio de aceptación
+1.Modificación de citas permitida en emergencias.
+2. Modificación de citas por ajustes de disponibilidad.
+Contexto: 
+1.  En caso de una emergencia médica o imprevisto.
+2.  En caso de un cambio en la disponibilidad del psicólogo.
+Evento:
+1. Cuando el psicólogo debe modificar la cita del paciente.
+2. Cuando el psicólogo ajusta su horario.
+Resultado:
+1. El sistema permite modificar la cita y notifica automáticamente al paciente.
+2. El sistema permite al psicólogo modificar varias citas en bloque y avisar a los pacientes afectados.
+
+E2 H2.3
+Rol: Como paciente
+Caracteristica / Funcionalidad: Quiero poder cancelar o reprogramar mis citas fácilmente a través de la plataforma.
+Razón / resultado:Para gestionar mis compromisos.
+Criterio de aceptación
+1. El paciente debe poder cancelar o reprogramar una cita fácilmente desde la plataforma.
+2. El sistema debe verificar la disponibilidad de nuevas fechas en caso de reprogramación.
+Contexto: 
+1. En caso de que el paciente no pueda asistir a la cita original.
+2.En caso de que el paciente desee mover la cita a otro día.
+Evento:
+1. Cuando el paciente selecciona la opción de cancelar o reprogramar desde su perfil.
+2. Cuando el paciente busca reprogramar su cita
+Resultado:
+1. El sistema elimina la cita o actualiza el calendario con la nueva fecha y hora, enviando notificaciones a ambas partes.
+2.El sistema muestra las fechas y horarios disponibles para la nueva cita y permite al paciente seleccionar una opción.
+
+E2 H2.4
+Rol:Como psicólogo
+Caracteristica / Funcionalidad: Quiero ver un resumen semanal de las citas programadas.
+Razón / resultado: Para poder organizar mi calendario de manera eficiente.
+Criterio de aceptación
+1.Visualización clara del resumen semanal
+2. Filtrado del resumen por paciente.
+Contexto: 
+1. En caso de que el psicólogo necesite organizarse al inicio de la semana.
+2. En caso de que el psicólogo quiera organizar su semana según la evolución de ciertos pacientes.
+Evento:
+1.Cuando revisa el resumen semanal de citas.
+2. Cuando necesita priorizar ciertas consultas.
+Resultado:
+1. El sistema muestra las citas programadas y reprogramadas con indicadores de prioridad.
+2. El sistema permite filtrar citas por paciente, tipo de sesión, y ubicación.
+
+E3 H3.1
+Rol: Como paciente
+Caracteristica / Funcionalidad: Quiero poder enviar mensajes a mi psicólogo en cualquier momento
+Razón / resultado:Para recibir apoyo emocional entre sesiones.
+Criterio de aceptación
+1.El paciente debe poder enviar mensajes en cualquier momento a través de la plataforma
+2.Los mensajes deben ser almacenados y enviados al psicólogo en función de su disponibilidad.
+Contexto: 
+1.En caso de que el paciente necesite apoyo emocional entre sesiones.
+2.En caso de que el psicólogo esté disponible para responder.
+Evento:
+1.Cuando el paciente redacta y envía un mensaje a través del sistema de mensajería.
+2. Cuando el paciente envía un mensaje fuera del horario laboral del psicólogo.
+Resultado:
+1. El sistema envía el mensaje al psicólogo y lo guarda en el historial de mensajes.
+2. El sistema almacena el mensaje y lo entrega al psicólogo cuando este esté disponible, notificando al paciente que su mensaje ha sido recibido.
+
+E3 H3.2
+Rol: Como psicólogo
+Caracteristica / Funcionalidad: Quiero tener una funcionalidad que me permita gestionar y priorizar los mensajes de mis pacientes que recibo fuera del horario de las sesiones.
+Razón / resultado:Para asegurarme de responder a los más urgentes de manera oportuna y eficiente.
+Criterio de aceptación
+1.Clasificación automática de mensajes según palabras clave.
+2. Notificaciones sobre mensajes críticos fuera de horario.
+Contexto: 
+1.En caso de recibir mensajes con palabras clave como "urgente" o "emergencia".
+2. En caso de que un paciente necesite apoyo urgente fuera de las sesiones.
+Evento:
+1. Cuando el psicólogo recibe mensajes de varios pacientes.
+2. Cuando el paciente envía un mensaje fuera del horario laboral.
+Resultado:
+1. El sistema identifica los mensajes urgentes y los prioriza en la bandeja de entrada.
+2. El sistema envía una notificación automática al psicólogo sobre los mensajes prioritarios y lo alerta del nivel de urgencia.
+
+E4 H4.1
+Rol:Como paciente
+Caracteristica / Funcionalidad: Quiero acceder a una serie de guías y ejercicios de manejo de crisis emocionales
+Razón / resultado: Para poder usarlas en momentos de necesidad.
+Criterio de aceptación
+1. Acceso a guías categorizadas.
+2. Disponibilidad de guías multimedia.
+Contexto: 
+1. En caso de que el paciente experimente diferentes tipos de crisis emocionales.
+2. En caso de que el paciente prefiera diferentes formatos para aprender.
+Evento:
+1. Cuando el paciente accede a la sección de manejo de crisis.
+2. Cuando el paciente selecciona una guía.
+Resultado:
+1. El sistema ofrece guías categorizadas por tipo de crisis, como ansiedad, depresión o estrés.
+2. El sistema ofrece guías en formato de texto, video y audio, adaptadas a la situación del paciente.
+
+E4 H4.2
+Rol: Como psicólogo
+Caracteristica / Funcionalidad: Quiero poder personalizar y asignar herramientas y ejercicios de manejo de crisis específicos a cada paciente.
+Razón / resultado: Para asegurarme de que reciban recursos adecuados a sus necesidades individuales y puedan utilizarlos eficazmente en momentos críticos.
+Criterio de aceptación
+1. Asignación de herramientas según diagnóstico.
+2. Edición de herramientas asignadas.
+Contexto: 
+1. En caso de que el psicólogo diagnostique una condición específica.
+2. En caso de que el paciente necesite nuevas herramientas conforme progresa.
+Evento:
+1. En caso de que el psicólogo diagnostique una condición específica.
+2. En caso de que el paciente necesite nuevas herramientas conforme progresa.
+
+Resultado:
+1. El sistema permite asignar ejercicios y guías basadas en el diagnóstico registrado en la ficha del paciente.
+2. El sistema permite modificar o actualizar las herramientas asignadas previamente, reflejando los avances del paciente.
+
+E4 H4.3
+Rol: Como paciente
+Caracteristica / Funcionalidad: Quiero poder marcar herramientas como favoritas
+Razón / resultado: Para acceder rápidamente a las que mejor me funcionan.
+Criterio de aceptación
+1. Favoritos accesibles desde la pantalla principal.
+2. Favoritos categorizados.
+Contexto: 
+1. En caso de que el paciente necesite acceder rápidamente a sus herramientas más utilizadas.
+2. En caso de que el paciente quiera organizar sus herramientas favoritas por tipo de crisis.
+Evento:
+1. Cuando el paciente accede al área de manejo de crisis.
+2. Cuando el paciente gestiona sus favoritos.
+Resultado:
+1. El sistema muestra una lista de herramientas marcadas como favoritas en la pantalla principal de la sección de herramientas.
+2. El sistema permite al paciente organizar sus herramientas favoritas en categorías como ansiedad, estrés, o bienestar general.
+
+E5 H5.1
+Rol: Como psicólogo
+Caracteristica / Funcionalidad: Quiero acceder a las fichas clínicas de mis pacientes.
+Razón / resultado: Para monitorear su evolución y tomar decisiones adecuadas para su tratamiento.
+Criterio de aceptación
+1. Acceso General a las Fichas Clínicas
+2. Filtros de Información Clínica
+Contexto: 
+1. En caso de que el psicólogo desee revisar el historial completo del paciente.
+2. En caso de que el psicólogo necesite consultar detalles específicos de la ficha clínica.
+Evento:
+1. Cuando el psicólogo accede a la plataforma para monitorear el progreso de un paciente.
+2. Cuando el psicólogo busca información puntual sobre un tratamiento o diagnóstico específico.
+Resultado:
+1. El sistema permite al psicólogo ver la ficha clínica completa de sus pacientes, con acceso a todo el historial de sesiones, observaciones y tratamientos aplicados.
+2. El sistema proporciona opciones de filtrado que permiten al psicólogo visualizar aspectos específicos de la ficha clínica, como diagnósticos, tratamientos o notas de sesiones pasadas.
+
+E5 5.2
+Rol:Como psicólogo
+Caracteristica / Funcionalidad: Quiero poder agregar anotaciones privadas en la ficha clínica de mis pacientes.
+Razón / resultado: Para para llevar un registro detallado de mis observaciones.
+Criterio de aceptación
+1. El psicólogo debe poder agregar notas privadas en las fichas de los pacientes.
+2. Las notas deben ser visibles solo para el psicólogo y no para el paciente.
+Contexto: 
+1. En caso de que el psicólogo desee anotar observaciones adicionales.
+2. En caso de que el psicólogo deba revisar estas notas antes de la próxima sesión.
+Evento:
+1. Cuando el psicólogo agrega una nota en la ficha clínica de un paciente durante o después de una sesión.
+2. Cuando el psicólogo revisa la ficha del paciente y accede a sus anotaciones privadas.
+Resultado:
+1. El sistema guarda la nota como parte del historial clínico, accesible solo para el psicólogo.
+2. El sistema muestra las notas privadas al psicólogo, manteniéndolas ocultas para el paciente.
+
+E6 H6.1
+Rol: Como administrador
+Caracteristica / Funcionalidad: Quiero que toda la información sensible de los pacientes esté protegida mediante medidas de seguridad avanzadas.
+Razón / resultado: Para garantizar la privacidad y confidencialidad.
+Criterio de aceptación
+1. Autenticación de dos factores.
+2. Encriptación de datos en reposo y en tránsito.
+Contexto: 
+1. En caso de que el paciente acceda desde un dispositivo nuevo.
+2. En caso de transmisión o almacenamiento de información sensible.
+Evento:
+1. Cuando el paciente o psicólogo inician sesión.
+2. Cuando los datos del paciente son almacenados o transferidos.
+Resultado:
+1. El sistema requiere autenticación de dos factores para garantizar la seguridad del acceso a la información sensible.
+2. El sistema cifra todos los datos sensibles tanto en tránsito como en reposo, protegiéndolos de accesos no autorizados.
+
+E6 H6.2
+Rol: Como paciente
+Caracteristica / Funcionalidad: Quiero poder ver un registro de acceso a mi cuenta.
+Razón / resultado: Para asegurarme de que solo yo y mi psicólogo hemos accedido a mi información.
+Criterio de aceptación
+1. Notificación de acceso no autorizado.
+2. Historial completo de accesos.
+Contexto: 
+1. En caso de un intento de acceso no autorizado.
+2. En caso de que el paciente quiera revisar los accesos a su cuenta.
+Evento:
+1. Cuando el sistema detecta un intento de inicio de sesión sospechoso.
+2. Cuando el paciente consulta el registro de acceso.
+Resultado:
+1. El sistema notifica al paciente sobre el intento de acceso y bloquea la cuenta hasta que se verifique la autenticidad. 
+2. El sistema muestra un historial detallado de los accesos, incluyendo la ubicación, hora, y dispositivo desde el cual se realizó cada inicio de sesión.
+
+E6 H6.3
+Rol: Como administrador
+Caracteristica / Funcionalidad: Quiero implementar políticas de contraseñas robustas.
+Razón / resultado: Para que los usuarios creen contraseñas seguras y proteger la información sensible.
+Criterio de aceptación
+1. Requerimiento de caracteres especiales y longitud mínima.
+2. Expiración de contraseñas.
+Contexto: 
+1. En caso de creación o actualización de contraseñas.
+2. En caso de que el sistema detecte una contraseña débil o comprometida.
+Evento:
+1. Cuando el usuario establece una nueva contraseña.
+2. Cuando la cuenta no ha actualizado su contraseña por un largo periodo.
+Resultado:
+1. El sistema exige que las contraseñas incluyan al menos 8 caracteres, con una combinación de mayúsculas, minúsculas, números y símbolos.
+2. El sistema solicita al usuario actualizar su contraseña periódicamente para mantener la seguridad.
+
+E7 H7.1
+Rol: Como administrador
+Caracteristica / Funcionalidad: Quiero gestionar los roles de usuario (paciente, psicólogo, administrador).
+Razón / resultado: Para controlar los permisos y accesos a la información en la plataforma.
+Criterio de aceptación
+1. Creación de roles personalizados.
+2. Modificación de permisos de roles existentes.
+Contexto: 
+1. En caso de que el administrador necesite definir nuevos roles.
+2. En caso de que los permisos de un rol necesiten ser ajustados.
+Evento:
+1. Cuando se agregan nuevos perfiles de usuario.
+2.  Cuando se actualizan los permisos de acceso de un rol.
+Resultado:
+1. El sistema permite la creación de roles personalizados con permisos específicos.
+2. El sistema permite modificar los permisos de roles existentes sin afectar la integridad de la información.
+
+E7 H7.2
+Rol: Como administrador
+Caracteristica / Funcionalidad: Quiero poder crear diferentes roles de usuario con permisos específicos.
+Razón / resultado: Para garantizar que solo usuarios autorizados accedan a ciertos datos o funcionalidades.
+Criterio de aceptación
+1. Asignación de permisos detallados.
+2. Control de accesos diferenciados por área.
+Contexto: 
+1. En caso de que un rol requiera acceso a funcionalidades específicas.
+2. En caso de que se necesiten diferentes niveles de acceso según las áreas de la plataforma.
+Evento:
+1. Cuando se crea un rol nuevo.
+2. Cuando se gestionan los accesos a diferentes secciones del sistema.
+Resultado:
+1. El sistema permite al administrador asignar permisos detallados para cada rol, asegurando que solo usuarios autorizados puedan acceder a ciertas funciones.
+2. El sistema permite definir accesos diferenciados para las distintas áreas funcionales según el rol del usuario.
+
